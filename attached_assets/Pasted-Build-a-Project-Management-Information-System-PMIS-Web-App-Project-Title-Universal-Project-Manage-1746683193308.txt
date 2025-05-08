@@ -1,0 +1,73 @@
+Build a Project Management Information System (PMIS) Web App
+Project Title:
+Universal Project Management Information System (UPMIS)
+
+Objective:
+Create a full-stack web application that serves as a centralized Project Management Information System (PMIS) designed to support any type of project—such as infrastructure development (e.g., transformer installation), goods procurement, or small-value local projects. The system should support users from project planning through completion and archival.
+
+🔧 Core Features to Implement
+Project Initialization
+
+Create and manage project profiles.
+
+Define project types (goods, infrastructure, small-scale).
+
+Set project budgets, timelines, and descriptions.
+
+Work Breakdown Structure (WBS)
+
+Visual or hierarchical task decomposition.
+
+Assign dependencies, milestones, and cost breakdowns.
+
+Project Scope & Deliverables
+
+Define scope and expected outputs.
+
+Attach related documents (PDFs, images, etc.).
+
+Scheduling & Timeline Management
+
+Gantt chart or calendar integration for task tracking.
+
+Support for task dependencies and deadline alerts.
+
+Human Resource & Expert Management
+
+Assign engineers, safety officers, foremen, electricians, etc.
+
+Track qualifications, certifications, and experience.
+
+Team Collaboration & Communication
+
+Project discussion threads, file sharing, and comment logs.
+
+Real-time notifications and updates.
+
+Monitoring & Reporting
+
+Dashboard for progress monitoring and KPI tracking.
+
+Generate PDF/CSV reports for timeline, budget, or compliance.
+
+Historical Records & Project Completion
+
+Archive completed projects with final documentation.
+
+Generate “as-built” documentation or final completion reports.
+
+🧰 Tech Stack Suggestions
+Frontend: React or Vue.js
+
+Backend: Node.js with Express or Django
+
+Database: PostgreSQL or MongoDB
+
+Optional: Firebase for real-time features, D3.js for WBS visualization
+
+🔒 Extra Challenge (Optional)
+Implement user roles (admin, engineer, contractor, viewer).
+
+Add audit logging and compliance check reminders.
+
+Integrate a bid evaluation module inspired by RA 9184 procurement processes.
