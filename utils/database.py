@@ -462,12 +462,12 @@ def create_task(task_data):
     db = get_db_session()
     try:
         task = Task(**task_data)
-    except TypeError as e:
-        print(f"Error creating Task: {e}")
-        raise
         db.add(task)
         db.commit()
         return model_to_dict(task)
+    except TypeError as e:
+        print(f"Error creating Task: {e}")
+        raise
     finally:
         db.close()
 
