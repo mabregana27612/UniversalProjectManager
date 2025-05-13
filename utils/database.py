@@ -75,6 +75,7 @@ class Task(Base):
     approval_date = Column(String(20), nullable=True)
     rejection_reason = Column(Text, nullable=True)
     has_pending_changes = Column(Boolean, default=False)
+    is_milestone = Column(Boolean, default=False)
     
     # Relationships
     project = relationship("Project", back_populates="tasks")
