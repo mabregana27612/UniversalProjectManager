@@ -87,7 +87,13 @@ def create_gantt_chart(project_id, tasks):
             'Status': task['status'],
             'Progress': task.get('progress', 0),
             'ID': task['id'],
-            'Milestone': task.get('is_milestone', False)  # Add default value
+            # 'Milestone': task.get('is_milestone', False)  # Add default value
+            # Safeguard for missing 'Milestone' column
+            if 'Milestone' in df.columns:
+                milestones = df[df['Milestone']]
+            else:
+                milestones = None  # Or handle it differently if milestones are crucial
+            
         }
         for task in tasks
     ])
