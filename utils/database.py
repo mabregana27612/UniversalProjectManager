@@ -464,7 +464,7 @@ def create_task(task_data):
         task = Task(**task_data)
     except TypeError as e:
         print(f"Error creating Task: {e}")
-    raise
+        raise
         db.add(task)
         db.commit()
         return model_to_dict(task)
